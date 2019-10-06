@@ -1,3 +1,12 @@
 {
-  "message": "hello i18n !!"
+  "presentation": {
+    "first": {
+      "title": "Titre 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta euismod mauris, non facilisis sem mattis non. Vestibulum quis enim venenatis, eleifend ligula scelerisque, sollicitudin lectus. Suspendisse non tortor"
+    },
+    "second": {
+      "title": "Titre 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta euismod mauris, non facilisis sem mattis non. Vestibulum quis enim venenatis, eleifend ligula scelerisque, sollicitudin lectus. Suspendisse non tortor"
+    }
+  }
 }
