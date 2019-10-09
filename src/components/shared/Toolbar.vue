@@ -1,15 +1,18 @@
 <template>
-  <v-toolbar>
-    <v-toolbar-title>Title</v-toolbar-title>
-
-    <v-spacer />
-
-    <v-toolbar-items>
-      <v-btn v-for="(item, index) in menuItems" :key="index" :to="item.path" primary depressed text>
+  <v-app-bar app>
+    <v-toolbar-title class="headline text-uppercase">
+      <span>Mounir Khanouri</span>
+    </v-toolbar-title>
+    <v-spacer></v-spacer>
+    <v-btn
+      v-for="(item, index) in menuItems"
+      :key="index"
+      text
+      :to="item.path"
+    >
       <span>{{ item.label }}</span>
-      </v-btn>
-    </v-toolbar-items>
-  </v-toolbar>
+    </v-btn>
+  </v-app-bar>
 </template>
 
 <script>
