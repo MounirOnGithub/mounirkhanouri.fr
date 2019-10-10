@@ -1,26 +1,24 @@
 <template>
-  <v-layout column text-xs-center>
-    <v-flex>{{ icon }}</v-flex>
+  <v-layout column>
+    <v-flex py-1>
+      <v-icon x-large>{{ icon }}</v-icon>
+    </v-flex>
     <v-flex class="title">
-      <span>
-        {{ title }}
-      </span>
+      <span>{{ title }}</span>
     </v-flex>
     <v-flex>
-      <span>
-        {{ description }}
-      </span>
+      <span>{{ description }}</span>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 export default {
-  name: 'Presentation',
+  name: "Presentation",
   props: {
-    icon: { type: String, default: '' },
-    title: { type: String, default: '' },
-    description: { type: String, default: '' },
-  },
-}
+    icon: { type: String, default: "" },
+    title: { type: String, default: "" },
+    description: { type: String, default: "" }
+  }
+};
 </script>
