@@ -2,21 +2,23 @@
   <v-app>
     <toolbar />
     <v-content>
-      <router-view />
+      <v-container fluid py-0>
+        <router-view />
+      </v-container>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import Toolbar from '@/components/shared/Toolbar';
+import Toolbar from "@/components/shared/Toolbar";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    toolbar: Toolbar,
+    toolbar: Toolbar
   },
   data: () => ({
     //
-  }),
+  })
 };
 </script>

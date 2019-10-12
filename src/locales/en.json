@@ -8,5 +8,24 @@
       "title": "Titre 2",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta euismod mauris, non facilisis sem mattis non. Vestibulum quis enim venenatis, eleifend ligula scelerisque, sollicitudin lectus. Suspendisse non tortor"
     }
+  },
+  "skills": {
+    "title": "Which skills might interest you ?",
+    "javascript": {
+      "title": "Javascript",
+      "description": "Very famous language for developing frontend web application, also used in backend development nowadays"
+    },
+    "golang": {
+      "title": "Golang",
+      "description": "Developed by Google, strong typed language and easy to read. Golang is making its place on the market"
+    },
+    "nodejs": {
+      "title": "Node.js",
+      "description": "Easy to learn, Node.js allows us to have Javascript in both frontend and backend sides"
+    },
+    "mongo": {
+      "title": "Mongo DB",
+      "description": "Base on JSON documents, much more efficient and expressive than the traditional model based on rows and columns"
+    }
   }
 }
