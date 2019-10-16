@@ -44,18 +44,23 @@
         </v-flex>
       </v-layout>
     </v-flex>
+    <v-flex xs12>
+      <contactform />
+    </v-flex>
   </v-layout>
 </template>
 
 <script>
 import Presentation from "@/components/home/Presentation";
 import HomeCarousel from "@/components/home/HomeCarousel";
+import ContactForm from "@/components/shared/ContactForm";
 
 export default {
   name: "Home",
   components: {
     presentation: Presentation,
-    carousel: HomeCarousel
+    carousel: HomeCarousel,
+    contactform: ContactForm,
   }
 };
 </script>
