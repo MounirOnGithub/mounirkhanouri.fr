@@ -1,8 +1,6 @@
 <template>
   <v-layout row text-center>
-    <v-flex xs12>
-      <carousel />
-    </v-flex>
+    <v-flex xs12></v-flex>
     <v-flex md6 xs12 px-12>
       <presentation
         :title="$t('presentation.first.title')"
@@ -47,6 +45,9 @@
     <v-flex xs12>
       <contactform />
     </v-flex>
+    <v-flex xs12>
+      <v-footer padless>toto</v-footer>
+    </v-flex>
   </v-layout>
 </template>
 
@@ -54,6 +55,7 @@
 import Presentation from "@/components/home/Presentation";
 import HomeCarousel from "@/components/home/HomeCarousel";
 import ContactForm from "@/components/shared/ContactForm";
+import Footer from "@/components/shared/Footer";
 
 export default {
   name: "Home",
@@ -61,6 +63,7 @@ export default {
     presentation: Presentation,
     carousel: HomeCarousel,
     contactform: ContactForm,
+    footer: Footer
   }
 };
 </script>

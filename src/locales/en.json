@@ -1,12 +1,27 @@
 {
+  "hints": {
+    "form": {
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "email": "E-mail",
+      "message": "Message",
+      "messagePlaceholder": "Any ideas is welcome...",
+      "send": "Send"
+    }
+  },
+  "home": {
+    "form": {
+      "title": "Contact form"
+    }
+  },
   "presentation": {
     "first": {
-      "title": "Titre 1",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta euismod mauris, non facilisis sem mattis non. Vestibulum quis enim venenatis, eleifend ligula scelerisque, sollicitudin lectus. Suspendisse non tortor"
+      "title": "Your project is also mine",
+      "description": "The main thing that convinced me to become a freelancer is that I know that a project I chose is more important that a project I integrate. It clearly turns me as it is my own project when I work for my clients"
     },
     "second": {
-      "title": "Titre 2",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus porta euismod mauris, non facilisis sem mattis non. Vestibulum quis enim venenatis, eleifend ligula scelerisque, sollicitudin lectus. Suspendisse non tortor"
+      "title": "How I love work ?",
+      "description": "Always dynamic and with a smile. A good day at the office for me it's a moment of sharing with my team where I learned something in my day and where I felt useful"
     }
   },
   "skills": {
