@@ -1,4 +1,16 @@
 {
+  "errors": {
+    "contactForm": {
+      "name": {
+        "atLeastCharac": "Field name require a minimum of 10 characters",
+        "required": "Field name required"
+      },
+      "email": {
+        "valid": "Field name require to be a valid email address",
+        "required": "Field email required"
+      }
+    }
+  },
   "hints": {
     "form": {
       "firstname": "Firstname",

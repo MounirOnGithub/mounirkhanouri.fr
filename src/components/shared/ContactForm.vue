@@ -47,20 +47,22 @@
 <script>
 export default {
   name: "ContactForm",
-  data: () => ({
-    valid: false,
-    firstname: "",
-    lastname: "",
-    nameRules: [
-      v => !!v || this.$t("errors.contactForm.name.required"),
-      v => v.length <= 10 || this.$t("errors.contactForm.name.atLeastCharac")
-    ],
-    email: "",
-    emailRules: [
-      v => !!v || this.$t("errors.contactForm.email.required"),
-      v => /.+@.+/.test(v) || this.$t("errors.contactForm.email.valid")
-    ],
-    message: ""
-  })
+  data() {
+    return {
+      valid: false,
+      firstname: "",
+      lastname: "",
+      nameRules: [
+        v => !!v || this.$t("errors.contactForm.name.required"),
+        v => v.length <= 10 || this.$t("errors.contactForm.name.atLeastCharac")
+      ],
+      email: "",
+      emailRules: [
+        v => !!v || this.$t("errors.contactForm.email.required"),
+        v => /.+@.+/.test(v) || this.$t("errors.contactForm.email.valid")
+      ],
+      message: ""
+    };
+  }
 };
 </script>

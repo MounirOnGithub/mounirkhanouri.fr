@@ -1,6 +1,16 @@
 <template>
   <v-layout row text-center>
-    <v-flex xs12></v-flex>
+    <v-flex xs12>
+      <v-carousel>
+        <v-carousel-item
+          v-for="(item,i) in items"
+          :key="i"
+          :src="item.src"
+          reverse-transition="fade"
+          transition="fade"
+        ></v-carousel-item>
+      </v-carousel>
+    </v-flex>
     <v-flex md6 xs12 px-12>
       <presentation
         :title="$t('presentation.first.title')"
@@ -46,14 +56,15 @@
       <contactform />
     </v-flex>
     <v-flex xs12>
-      <v-footer padless>toto</v-footer>
+      <v-footer>
+        <mkhfooter />
+      </v-footer>
     </v-flex>
   </v-layout>
 </template>
 
 <script>
 import Presentation from "@/components/home/Presentation";
-import HomeCarousel from "@/components/home/HomeCarousel";
 import ContactForm from "@/components/shared/ContactForm";
 import Footer from "@/components/shared/Footer";
 
@@ -61,9 +72,26 @@ export default {
   name: "Home",
   components: {
     presentation: Presentation,
-    carousel: HomeCarousel,
     contactform: ContactForm,
-    footer: Footer
+    mkhfooter: Footer
+  },
+  data() {
+    return {
+      items: [
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+        },
+        {
+          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+        }
+      ]
+    };
   }
 };
 </script>
