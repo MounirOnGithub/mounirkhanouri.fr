@@ -13,12 +13,14 @@
     </v-flex>
     <v-flex md6 xs12 px-12>
       <presentation
+        :icon="iconExchange"
         :title="$t('presentation.first.title')"
         :description="$t('presentation.first.description')"
       />
     </v-flex>
     <v-flex md6 xs12 px-12>
       <presentation
+        :icon="iconHeart"
         :title="$t('presentation.second.title')"
         :description="$t('presentation.second.description')"
       />
@@ -77,6 +79,14 @@ export default {
   },
   data() {
     return {
+      iconHeart: {
+        type: "mdi-heart-flash",
+        color: "#E57373"
+      },
+      iconExchange: {
+        type: "mdi-autorenew",
+        color: "#81C784"
+      },
       items: [
         {
           src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
