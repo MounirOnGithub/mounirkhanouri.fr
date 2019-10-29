@@ -54,5 +54,15 @@
       "title": "Mongo DB",
       "description": "Base on JSON documents, much more efficient and expressive than the traditional model based on rows and columns"
     }
+  },
+  "footer": {
+    "authorField": "Author",
+    "mailField": "Mail",
+    "locationField": "Location",
+    "author": {
+      "name": "Mounir KHANOURI",
+      "mail": "m.khanouri@icloud.com",
+      "location": "Lille & Villeneuve d'Ascq"
+    }
   }
 }
