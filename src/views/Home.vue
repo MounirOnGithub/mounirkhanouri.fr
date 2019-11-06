@@ -11,21 +11,21 @@
         ></v-carousel-item>
       </v-carousel>
     </v-flex>
-    <v-flex md6 xs12 px-12>
+    <v-flex md6 xs12 px-12 my-md-10>
       <presentation
         :icon="iconExchange"
         :title="$t('presentation.first.title')"
         :description="$t('presentation.first.description')"
       />
     </v-flex>
-    <v-flex md6 xs12 px-12>
+    <v-flex md6 xs12 px-12 my-md-10>
       <presentation
         :icon="iconHeart"
         :title="$t('presentation.second.title')"
         :description="$t('presentation.second.description')"
       />
     </v-flex>
-    <v-flex xs12>
+    <v-flex xs12 my-10>
       <v-layout row text-center>
         <v-flex my-12>
           <span class="title">{{ $t('skills.title') }}</span>
@@ -54,7 +54,7 @@
         </v-flex>
       </v-layout>
     </v-flex>
-    <v-flex xs12>
+    <v-flex xs12 my-10>
       <contactform />
     </v-flex>
   </v-layout>
