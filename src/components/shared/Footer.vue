@@ -5,15 +5,15 @@
     <v-flex xs4>
       <v-layout column text-left py-2>
         <v-flex py-1>
-          <span>{{ $t('footer.authorField') }} :</span>
+          <v-icon>{{ authorIcon }}</v-icon>
           {{ $t('footer.author.name') }}
         </v-flex>
         <v-flex py-1>
-          <span>{{ $t('footer.mailField') }} :</span>
+          <v-icon>{{ mailIcon }}</v-icon>
           {{ $t('footer.author.mail') }}
         </v-flex>
         <v-flex py-1>
-          <span>{{ $t('footer.locationField') }} :</span>
+          <v-icon>{{ locationIcon }}</v-icon>
           {{ $t('footer.author.location') }}
         </v-flex>
       </v-layout>
@@ -23,6 +23,13 @@
 
 <script>
 export default {
-  name: "Footer"
+  name: "Footer",
+  data() {
+    return {
+      authorIcon: "mdi-account-card-details",
+      mailIcon: "mdi-gmail",
+      locationIcon: "mdi-crosshairs-gps"
+    };
+  }
 };
 </script>
