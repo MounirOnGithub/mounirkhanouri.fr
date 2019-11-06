@@ -4,6 +4,9 @@
     <v-content>
       <v-container fluid py-0>
         <router-view />
+        <v-footer>
+          <mkhfooter />
+        </v-footer>
       </v-container>
     </v-content>
   </v-app>
@@ -11,11 +14,13 @@
 
 <script>
 import Toolbar from "@/components/shared/Toolbar";
+import Footer from "@/components/shared/Footer";
 
 export default {
   name: "App",
   components: {
-    toolbar: Toolbar
+    toolbar: Toolbar,
+    mkhfooter: Footer
   },
   data: () => ({
     //

@@ -57,25 +57,18 @@
     <v-flex xs12>
       <contactform />
     </v-flex>
-    <v-flex xs12>
-      <v-footer>
-        <mkhfooter />
-      </v-footer>
-    </v-flex>
   </v-layout>
 </template>
 
 <script>
 import Presentation from "@/components/home/Presentation";
 import ContactForm from "@/components/shared/ContactForm";
-import Footer from "@/components/shared/Footer";
 
 export default {
   name: "Home",
   components: {
     presentation: Presentation,
-    contactform: ContactForm,
-    mkhfooter: Footer
+    contactform: ContactForm
   },
   data() {
     return {
