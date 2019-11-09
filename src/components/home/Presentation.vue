@@ -1,6 +1,6 @@
 <template>
   <v-layout column my-7>
-    <v-flex pt-7>
+    <v-flex>
       <v-icon x-large :color="icon.color">{{ icon.type }}</v-icon>
     </v-flex>
     <v-flex class="title py-2">

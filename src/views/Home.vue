@@ -1,14 +1,19 @@
 <template>
   <v-layout row text-center>
     <v-flex xs12>
-      <v-carousel>
+      <v-carousel v-if="!$vuetify.breakpoint.xsOnly" height="850">
         <v-carousel-item
           v-for="(item,i) in items"
           :key="i"
-          :src="item.src"
           reverse-transition="fade"
           transition="fade"
-        ></v-carousel-item>
+        >
+          <v-layout row>
+            <v-flex xs12>
+              <v-img :src="item.src" />
+            </v-flex>
+          </v-layout>
+        </v-carousel-item>
       </v-carousel>
     </v-flex>
     <v-flex md6 xs12 px-12 my-md-10>
@@ -25,11 +30,17 @@
         :description="$t('presentation.second.description')"
       />
     </v-flex>
-    <v-flex xs12 my-10>
-      <skills />
+    <v-flex xs12>
+      <v-parallax height="600" :src="require('@/assets/office.jpg')">
+        <v-layout row align-center>
+          <v-flex py-5 mx-10>
+            <contactform />
+          </v-flex>
+        </v-layout>
+      </v-parallax>
     </v-flex>
     <v-flex xs12 my-10>
-      <contactform />
+      <skills />
     </v-flex>
   </v-layout>
 </template>
@@ -58,16 +69,13 @@ export default {
       },
       items: [
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+          src: require("@/assets/begin-table.jpg")
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+          src: require("@/assets/mac.jpg")
         },
         {
-          src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
-        },
-        {
-          src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+          src: require("@/assets/code-glass.jpg")
         }
       ]
     };
