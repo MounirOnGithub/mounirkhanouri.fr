@@ -1,12 +1,13 @@
 <template>
   <v-layout row text-center>
     <v-flex xs12>
-      <v-carousel v-if="!$vuetify.breakpoint.xsOnly" height="850">
+      <v-carousel v-if="!$vuetify.breakpoint.xsOnly" height="750">
         <v-carousel-item
           v-for="(item,i) in items"
           :key="i"
           reverse-transition="fade"
           transition="fade"
+          continuous
         >
           <v-layout row>
             <v-flex xs12>
@@ -69,10 +70,10 @@ export default {
       },
       items: [
         {
-          src: require("@/assets/begin-table.jpg")
+          src: require("@/assets/mac.jpg")
         },
         {
-          src: require("@/assets/mac.jpg")
+          src: require("@/assets/mountain.jpg")
         },
         {
           src: require("@/assets/code-glass.jpg")
